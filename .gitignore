@@ -1,0 +1,5 @@
+*.pt
+bus.jpg
+runs/
+__pycache__/
+*.pyc

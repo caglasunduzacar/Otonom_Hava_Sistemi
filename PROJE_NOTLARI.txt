@@ -1,0 +1,25 @@
+OTONOM HAVA SİSTEMLERİNDE GÖRÜNTÜ TABANLI TEHDİT ALGILAMA VE DURUMSAL FARKINDALIK
+
+PROJE AMACI
+
+İnsansız hava araçlarının görüntü verisinden tehdit unsurlarını tanıyabilmesi
+ve zorlu görüş koşullarında durumsal farkındalığını sürdürmesi amaçlanmaktadır.
+
+PROJE KAPSAMI
+
+1. Derin öğrenme tabanlı nesne tanıma
+2. Anomali tespiti
+3. Sahnedeki unsurların tanımlanması
+4. Dost/nötr/tehdit ayrımı
+5. Sis koşullarında başarım analizi
+6. Düşük ışık koşullarında başarım analizi
+7. Hareket bulanıklığı koşullarında başarım analizi
+8. Bozulmuş koşullarda dayanıklılık analizi
+9. Düşük güvenli tespitlerin operatöre işaretlenmesi
+10. Durumsal farkındalık arayüzü
+
+BEKLENEN ÇIKTILAR
+
+1. Algılama modeli
+2. Bozulmuş koşullar için dayanıklılık analizi
+3. Durumsal farkındalık arayüzü
