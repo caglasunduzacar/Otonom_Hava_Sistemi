@@ -48,7 +48,7 @@ Eğitim sürecinde kullanılan temel hiperparametreler ve görevleri aşağıdak
 |---|---|---|
 | Model | `yolov8s.pt` | YOLOv8 Small model ağırlıkları kullanılmıştır. |
 | data | `data.yaml` | Eğitim, doğrulama ve test veri yollarını, sınıf sayısını ve sınıf isimlerini tanımlar. |
-| epochs | 50 | Modelin veri seti üzerinde 50 eğitim turu gerçekleştirmesini sağlar. |
+| epochs | 50/60 | Modelin veri seti üzerinde 50 eğitim turu gerçekleştirmesini sağlar. |
 | imgsz | 640 | Giriş görüntülerinin 640×640 piksel çözünürlükte işlenmesini belirler. |
 | batch | 16 | Her eğitim iterasyonunda işlenen görüntü sayısını belirler. |
 | cls | 2.5 | Sınıflandırma kaybının ağırlığını belirler. |
