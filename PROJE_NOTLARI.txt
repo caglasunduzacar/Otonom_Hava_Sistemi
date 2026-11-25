@@ -1,25 +1,28 @@
 OTONOM HAVA SİSTEMLERİNDE GÖRÜNTÜ TABANLI TEHDİT ALGILAMA VE DURUMSAL FARKINDALIK
 
-PROJE AMACI
+## Model Eğitimleri ve Karşılaştırma Süreci
 
-İnsansız hava araçlarının görüntü verisinden tehdit unsurlarını tanıyabilmesi
-ve zorlu görüş koşullarında durumsal farkındalığını sürdürmesi amaçlanmaktadır.
+Bu projede, İHA görüntüleri üzerinden askerî nesnelerin tespit edilmesi amacıyla YOLOv8n, YOLOv8s ve YOLO11s modelleri kullanılmıştır. Modeller farklı hava koşullarında ve eğitim aşamalarında test edilerek performansları incelenmiştir.
 
-PROJE KAPSAMI
+### 1. YOLOv8n_İlk Eğitim
+YOLOv8n modelinin ilk eğitimi normal hava koşullarında elde edilen görüntüler kullanılarak gerçekleştirilmiştir. Bu eğitim, modelin temel performansını incelemek amacıyla yapılmıştır.
 
-1. Derin öğrenme tabanlı nesne tanıma
-2. Anomali tespiti
-3. Sahnedeki unsurların tanımlanması
-4. Dost/nötr/tehdit ayrımı
-5. Sis koşullarında başarım analizi
-6. Düşük ışık koşullarında başarım analizi
-7. Hareket bulanıklığı koşullarında başarım analizi
-8. Bozulmuş koşullarda dayanıklılık analizi
-9. Düşük güvenli tespitlerin operatöre işaretlenmesi
-10. Durumsal farkındalık arayüzü
+### 2. YOLOv8n_Final – İkinci Eğitim
+YOLOv8n modelinin ikinci eğitiminde sisli ve yağmurlu hava koşullarını içeren görüntüler kullanılmıştır. Bu aşamada modelin temel mimarisi değiştirilmemiş, aynı YOLOv8n modeli farklı hava koşullarını içeren verilerle yeniden eğitilmiştir.
 
-BEKLENEN ÇIKTILAR
+### 3. YOLO11n_İlk Eğitim
+YOLO11n modelinin ilk eğitimi normal hava koşullarındaki görüntüler kullanılarak gerçekleştirilmiştir. Bu eğitim, modelin normal hava koşullarındaki tespit performansını değerlendirmek amacıyla yapılmıştır.
 
-1. Algılama modeli
-2. Bozulmuş koşullar için dayanıklılık analizi
-3. Durumsal farkındalık arayüzü
+### 4. YOLO11n_İkinci Eğitim
+YOLO11n modelinin ikinci eğitiminde sisli ve yağmurlu hava koşullarını içeren görüntüler kullanılmıştır. Böylece modelin farklı çevresel koşullardaki performansı incelenmiştir.
+
+### 5. YOLO11s_Final – İyileştirilmiş Model
+YOLO11s Final, proje kapsamında geliştirilen iyileştirilmiş modeldir. Önceki eğitim aşamalarından elde edilen deneyimler doğrultusunda oluşturulmuş ve tespit performansını geliştirmek amacıyla eğitilmiştir.
+
+### 6. YOLOv8n_YOLOv8s_YOLO11s Karşılaştırması
+Bu bölümde YOLOv8n, YOLOv8s ve YOLO11s modelleri aynı veri seti, aynı hava koşulları ve aynı eğitim şartları altında karşılaştırılmıştır. Karşılaştırmanın amacı, modellerin performanslarını eşit koşullarda değerlendirmek ve hangi modelin nesne tespitinde daha başarılı sonuç verdiğini belirlemektir.
+
+Modellerin eğitim ve test sonuçları; Precision, Recall, mAP50, mAP50-95, karışıklık matrisi (Confusion Matrix) ve ROC eğrisi gibi ölçütler üzerinden incelenmiştir.
+
+### Genel Değerlendirme
+Proje kapsamında gerçekleştirilen eğitimler ile farklı YOLO modellerinin normal, sisli ve yağmurlu hava koşullarındaki performansları değerlendirilmiştir. Ayrıca aynı koşullar altında gerçekleştirilen model karşılaştırmasıyla YOLOv8n, YOLOv8s ve YOLO11s mimarilerinin başarımları analiz edilmiştir.
